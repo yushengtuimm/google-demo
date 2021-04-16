@@ -2,8 +2,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-This is a demo for recreating google home page and google search page using Next.js and tailwind css.
-Including @heroicons and @tailwindcss/line-clamp
+This is a demo project of recreating google home page and google search page using Next.js and tailwind css.
+The functionality are mainly for front-end only, and there is no seperate back-end build for this project. It only uses the free google developer search api to request data.
+
+~ stack also includes @heroicons and @tailwindcss/line-clamp
 - functional components :
   1. google header / footer
   2. google homepage search 
