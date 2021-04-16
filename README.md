@@ -11,3 +11,7 @@ Including @heroicons and @tailwindcss/line-clamp
   4. google searchpage content div display
   5. simple pagination
   6. using google search api with https://www.googleapis.com/customsearch/v1?
+
+## Demo
+
+Deployed with Vercel : https://google-demo.vercel.app/
