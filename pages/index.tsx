@@ -12,8 +12,9 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <div className="flex flex-col flex-grow items-center justify-center">
+      <Header />
       <Head>
-        <title>Pack</title>
+        <title>Google-clone</title>
       </Head>
 
       <Google />

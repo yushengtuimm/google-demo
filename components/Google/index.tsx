@@ -17,7 +17,7 @@ export default function Google() {
   };
 
   return (
-    <form className="flex flex-col items-center mt-44 flex-grow w-4/5">
+    <form className="relative flex flex-col items-center mt-44 flex-grow w-4/5">
       <Image
         src="https://www.google.co.uk/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
         height={100}
@@ -40,6 +40,29 @@ export default function Google() {
         <button onClick={search} className="btn">
           I'm Feeling Lucky
         </button>
+      </div>
+
+      <div className="custom-shadow">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-20 w-20 pr-5 md:h-12 md:w-12"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            fill="yellow"
+            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+          />
+        </svg>
+        <p className="flex flex-grow">
+          Note : This demo use google's Programmable Search Engine to search
+          only in the *.google.com and *.stackoverflow.com domain, so search
+          result is limited.
+        </p>
       </div>
     </form>
   );

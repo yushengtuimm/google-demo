@@ -39,7 +39,10 @@ function SearchBar() {
             onClick={() => (searchInputRef.current.value = "")}
           />
           <MicrophoneIcon className="h-6 mr-3 hidden sm:inline-flex text-blue-500 border-l-2 pl-4 border-gray-300" />
-          <SearchIcon className="h-6 text-blue-500 hidden sm:inline-flex" />
+          <SearchIcon
+            className="h-6 text-blue-500 hidden cursor-pointer sm:inline-flex"
+            onClick={search}
+          />
           <button hidden type="submit" onClick={search}>
             Search
           </button>

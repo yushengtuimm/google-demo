@@ -10,6 +10,13 @@ import Footer from "../components/Footer";
 
 function Search({ results }) {
   const router = useRouter();
+  console.log(results);
+  const pageination = results.queries?.nextPage ? (
+    <PaginationButtons />
+  ) : (
+    <p></p>
+  );
+
   return (
     <div>
       <Head>
@@ -22,7 +29,7 @@ function Search({ results }) {
       {/* Search Results */}
       <SearchResults results={results} />
 
-      <PaginationButtons />
+      {pageination}
     </div>
   );
 }
@@ -41,6 +48,11 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     : await fetch(
         `https://www.googleapis.com/customsearch/v1?key=${api_key}&cx=${context_key}&q=${context.query.term}&start=${startIndex}`
       ).then((res) => res.json());
+
+  console.log(
+    `https://www.googleapis.com/customsearch/v1?key=${api_key}&cx=${context_key}&q=${context.query.term}&start=${startIndex}`
+  );
+  console.log(data);
 
   if (!data) {
     return {
