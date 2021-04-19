@@ -49,11 +49,6 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
         `https://www.googleapis.com/customsearch/v1?key=${api_key}&cx=${context_key}&q=${context.query.term}&start=${startIndex}`
       ).then((res) => res.json());
 
-  console.log(
-    `https://www.googleapis.com/customsearch/v1?key=${api_key}&cx=${context_key}&q=${context.query.term}&start=${startIndex}`
-  );
-  console.log(data);
-
   if (!data) {
     return {
       notFound: true,
