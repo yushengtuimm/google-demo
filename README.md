@@ -17,3 +17,4 @@ The functionality are mainly for front-end only, and there is no seperate back-e
 ## Demo
 
 Deployed with Vercel : https://google-demo.vercel.app/
+this demo is publish on free quota with google search API, which may result limited search option.
